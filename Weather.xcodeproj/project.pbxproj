@@ -13,6 +13,7 @@
 		8A6FDDE5252FA89700F25F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6FDDE3252FA89700F25F9E /* Main.storyboard */; };
 		8A6FDDE7252FA89900F25F9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A6FDDE6252FA89900F25F9E /* Assets.xcassets */; };
 		8A6FDDEA252FA89900F25F9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6FDDE8252FA89900F25F9E /* LaunchScreen.storyboard */; };
+		8A6FDDFB252FAA0300F25F9E /* ViewController+alertController.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6FDDFA252FAA0300F25F9E /* ViewController+alertController.swift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8A6FDDE6252FA89900F25F9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A6FDDE9252FA89900F25F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A6FDDEB252FA89900F25F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A6FDDFA252FAA0300F25F9E /* ViewController+alertController.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+alertController.swift.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		8A6FDDDC252FA89700F25F9E /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				8A6FDDDD252FA89700F25F9E /* AppDelegate.swift */,
-				8A6FDDDF252FA89700F25F9E /* SceneDelegate.swift */,
-				8A6FDDE1252FA89700F25F9E /* ViewController.swift */,
-				8A6FDDE3252FA89700F25F9E /* Main.storyboard */,
-				8A6FDDE6252FA89900F25F9E /* Assets.xcassets */,
-				8A6FDDE8252FA89900F25F9E /* LaunchScreen.storyboard */,
-				8A6FDDEB252FA89900F25F9E /* Info.plist */,
+				8A6FDDF9252FA98800F25F9E /* Extensions */,
+				8A6FDDF8252FA97200F25F9E /* Models */,
+				8A6FDDF7252FA94D00F25F9E /* Views */,
+				8A6FDDF3252FA90600F25F9E /* Viwe Controllers */,
+				8A6FDDF5252FA92900F25F9E /* Supporting File */,
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		8A6FDDF3252FA90600F25F9E /* Viwe Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A6FDDE1252FA89700F25F9E /* ViewController.swift */,
+			);
+			path = "Viwe Controllers";
+			sourceTree = "<group>";
+		};
+		8A6FDDF5252FA92900F25F9E /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				8A6FDDDD252FA89700F25F9E /* AppDelegate.swift */,
+				8A6FDDDF252FA89700F25F9E /* SceneDelegate.swift */,
+				8A6FDDE6252FA89900F25F9E /* Assets.xcassets */,
+				8A6FDDEB252FA89900F25F9E /* Info.plist */,
+			);
+			path = "Supporting File";
+			sourceTree = "<group>";
+		};
+		8A6FDDF7252FA94D00F25F9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A6FDDE3252FA89700F25F9E /* Main.storyboard */,
+				8A6FDDE8252FA89900F25F9E /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A6FDDF8252FA97200F25F9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8A6FDDF9252FA98800F25F9E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8A6FDDFA252FAA0300F25F9E /* ViewController+alertController.swift.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +182,7 @@
 			files = (
 				8A6FDDE2252FA89700F25F9E /* ViewController.swift in Sources */,
 				8A6FDDDE252FA89700F25F9E /* AppDelegate.swift in Sources */,
+				8A6FDDFB252FAA0300F25F9E /* ViewController+alertController.swift.swift in Sources */,
 				8A6FDDE0252FA89700F25F9E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +332,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PHVAR297C9;
-				INFOPLIST_FILE = Weather/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Weather/Supporting File/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ByteApp.Weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PHVAR297C9;
-				INFOPLIST_FILE = Weather/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Weather/Supporting File/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ByteApp.Weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
