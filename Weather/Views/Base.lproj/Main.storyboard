@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b0G-nq-s2G">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,12 +13,12 @@
         <!--View Controller-->
         <scene sceneID="5Up-7O-Nh1">
             <objects>
-                <viewController id="b0G-nq-s2G" customClass="ViewController" customModule="Sunny" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="b0G-nq-s2G" customClass="ViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cJe-8u-paW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="QfW-WC-lTK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="QfW-WC-lTK">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4mp-A4-tcQ">
@@ -30,15 +31,14 @@
                                         <color key="textColor" name="infoColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOm-Vv-wl8">
-                                        <rect key="frame" x="113.33333333333334" y="0.99999999999999822" width="30" height="29.666666666666664"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOm-Vv-wl8">
+                                        <rect key="frame" x="113.33333333333334" y="0.0" width="30" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="CCL-Rw-bUo"/>
                                             <constraint firstAttribute="width" secondItem="LOm-Vv-wl8" secondAttribute="height" multiplier="30:31" id="wax-tl-dJG"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="tintColor" name="infoColor"/>
-                                        <state key="normal" backgroundImage="magnifyingglass.circle.fill" catalog="system"/>
+                                        <state key="normal" image="magnifyingglass" catalog="system"/>
                                         <connections>
                                             <action selector="searchPressed:" destination="b0G-nq-s2G" eventType="touchUpInside" id="6kV-ic-17s"/>
                                         </connections>
@@ -124,9 +124,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="375" height="667"/>
+        <image name="Background" width="375" height="667"/>
         <image name="cloud.rain.fill" catalog="system" width="128" height="125"/>
-        <image name="magnifyingglass.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <namedColor name="infoColor">
             <color red="0.95099997520446777" green="1" blue="0.66900002956390381" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
