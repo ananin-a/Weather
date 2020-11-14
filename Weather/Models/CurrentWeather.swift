@@ -10,7 +10,6 @@ import Foundation
 struct CurrentWeather {
 
     let cityName: String
-
     let temperature: Double
     var temperatureString: String {
         return String(format: "%.0f", temperature)
@@ -39,7 +38,6 @@ struct CurrentWeather {
         cityName = currentWeatherData.name
         temperature = currentWeatherData.main.temp
         feelsLikeTemperature = currentWeatherData.main.feelsLike
-//        conditionCode = currentWeatherData.weather.first!.id
         conditionCode = currentWeatherData.weather.first?.id ?? 0
     }
 }
